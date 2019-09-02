@@ -1,0 +1,30 @@
+{
+  "name": "godcss",
+  "version": "1.0.0",
+  "description": "SCSS to shorthanded, minified, concatenated and only used CSS",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^4.0.2"
+  },
+  "devDependencies": {
+    "gulp-autoprefixer": "^7.0.0",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-shorthand": "^1.1.0",
+    "gulp-uncss": "^1.0.6",
+    "node-sass": "^4.12.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhadresharya/GODcss.git"
+  },
+  "author": "Bhadresh Arya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bhadresharya/GODcss/issues"
+  },
+  "homepage": "https://github.com/bhadresharya/GODcss#readme"
+}
