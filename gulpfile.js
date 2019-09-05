@@ -6,6 +6,7 @@ var autoprefixer = require('gulp-autoprefixer');
 var shorthand = require('gulp-shorthand');
 var uncss = require('gulp-uncss');
 var cleancss = require('gulp-clean-css');
+var mediaQ = require('gulp-group-css-media-queries')
 
 gulp.task('style', function () {
     return gulp.src('./scss/**/*.scss')
@@ -17,6 +18,7 @@ gulp.task('style', function () {
                 'http://localhost/GODcss/'
             ]
         }))
+        .pipe(mediaQ())
         .pipe(cleancss())
         .pipe(gulp.dest('./css'));
 });
