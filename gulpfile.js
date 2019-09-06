@@ -4,22 +4,18 @@ var gulp = require('gulp');
 var scss = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var shorthand = require('gulp-shorthand');
-var uncss = require('gulp-uncss');
 var cleancss = require('gulp-clean-css');
-var mediaQ = require('gulp-group-css-media-queries')
+var mediaQ = require('gulp-group-css-media-queries');
+var uncomment = require('gulp-strip-comments');
 
 gulp.task('style', function () {
     return gulp.src('./scss/**/*.scss')
         .pipe(scss().on('error', scss.logError))
         .pipe(autoprefixer())
         .pipe(shorthand())
-        .pipe(uncss({
-            html: [
-                'http://localhost/GODcss/'
-            ]
-        }))
         .pipe(mediaQ())
         .pipe(cleancss())
+        .pipe(uncomment())
         .pipe(gulp.dest('./css'));
 });
 
