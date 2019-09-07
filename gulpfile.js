@@ -6,7 +6,6 @@ var autoprefixer = require('gulp-autoprefixer');
 var shorthand = require('gulp-shorthand');
 var cleancss = require('gulp-clean-css');
 var mediaQ = require('gulp-group-css-media-queries');
-var uncomment = require('gulp-strip-comments');
 
 gulp.task('style', function () {
     return gulp.src('./scss/**/*.scss')
@@ -15,10 +14,8 @@ gulp.task('style', function () {
         .pipe(shorthand())
         .pipe(mediaQ())
         .pipe(cleancss())
-        .pipe(uncomment())
         .pipe(gulp.dest('./css'));
 });
-
 gulp.task('default', function () {
     gulp.watch('./scss/**/*.scss', gulp.parallel('style'));
 });
