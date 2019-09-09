@@ -6,6 +6,7 @@ var autoprefixer = require('gulp-autoprefixer');
 var shorthand = require('gulp-shorthand');
 var cleancss = require('gulp-clean-css');
 var mediaQ = require('gulp-group-css-media-queries');
+var rename = require('gulp-rename');
 
 gulp.task('style', function () {
     return gulp.src('./scss/**/*.scss')
@@ -14,6 +15,9 @@ gulp.task('style', function () {
         .pipe(shorthand())
         .pipe(mediaQ())
         .pipe(cleancss())
+        .pipe(rename({
+            suffix: ".min"
+        }))
         .pipe(gulp.dest('./css'));
 });
 gulp.task('default', function () {
