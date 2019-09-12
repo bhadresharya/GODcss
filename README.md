@@ -9,7 +9,7 @@ In order to use Gulp you need to have [Node.js](https://nodejs.org/en/) installe
 ### Installing
 Clone this repo.
 ```
-git clone https://github.com/bhadresharya/github.git
+git clone https://github.com/bhadresharya/GODcss.git
 ```
 ### Setting up
 GODcss project has the following structure:
@@ -34,9 +34,9 @@ This creates node_modules directory with all the gulp plugins in the root of you
 * [gulp-sass](https://www.npmjs.com/package/gulp-sass) - Compiles SCSS into CSS
 * [gulp-autoprefixer](https://www.npmjs.com/package/gulp-autoprefixer) - Add prefixes into compiled CSS code
 * [gulp-shorthand](https://www.npmjs.com/package/gulp-shorthand) - Makes CSS lighter
-* [gulp-uncss](https://www.npmjs.com/package/gulp-uncss) - Remove unused CSS
 * [gulp-clean-css](https://www.npmjs.com/package/gulp-clean-css) - Minifies CSS
 * [gulp-group-css-media-queries](https://www.npmjs.com/package/gulp-group-css-media-queries) - Groups media queries
+* [gulp-rename](https://www.npmjs.com/package/gulp-rename) - renames file (adds .min suffix to output file)
 
 Evetything set up and now try to run gulp default command.
 ```
