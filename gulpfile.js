@@ -11,6 +11,11 @@ var rename = require('gulp-rename');
 gulp.task('style', function () {
     return gulp.src('./scss/**/*.scss')
         .pipe(scss().on('error', scss.logError))
+        .pipe(gulp.dest('./css'));
+});
+gulp.task('optimize', function () {
+    return gulp.src('./scss/**/*.scss')
+        .pipe(scss().on('error', scss.logError))
         .pipe(autoprefixer())
         .pipe(shorthand())
         .pipe(mediaQ())
@@ -19,7 +24,7 @@ gulp.task('style', function () {
             suffix: ".min"
         }))
         .pipe(gulp.dest('./css'));
-});
+})
 gulp.task('default', function () {
     gulp.watch('./scss/**/*.scss', gulp.parallel('style'));
 });

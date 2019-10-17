@@ -1,6 +1,6 @@
 {
   "name": "godcss",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "SCSS to shorthanded, minified, concatenated and only used CSS",
   "main": "index.js",
   "dependencies": {
