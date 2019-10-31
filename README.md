@@ -16,7 +16,9 @@ GODcss project has the following structure:
 ```
 GODcss
 ├── css
-│   └── style.css 
+│   ├── style.css
+│   ├── style.css.map
+│   └── style..min.css 
 ├── scss
 │   └── style.scss
 ├── gulpfile.js
@@ -43,7 +45,7 @@ Evetything set up and now try to run gulp default command.
 gulp
 ```
 ### Usage
-Now try making a change to the ```scss/style.scss``` and save it. It will be compiled to css in ```css/style.css``` file.
+Now try making a change to the ```scss/style.scss``` and save it. It will be compiled to css in ```css/style.css``` file along with its source map.
 
 ### Optimize
 ```
@@ -52,6 +54,8 @@ gulp optimize
 The optimized CSS code will be minified and with the prefixes added (even if you forgot to use them in your scss code).
 
 The optimized CSS code will be shorthanded and it will group the same media queries into one with their content code.
+
+It will be compiled into ```css/style.min.css```.
 
 #### Author
 **Bhadresh Arya** | [twitter](https://twitter.com/bhadresharya)
