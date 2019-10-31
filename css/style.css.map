@@ -1,1 +1,1 @@
-{"version":3,"file":"style.css","sources":["style.scss"],"sourcesContent":["* {\r\n    margin: 0px;\r\n    padding: 0px;\r\n}"],"names":[],"mappings":"AAAA,AAAA,CAAC,CAAC;EACE,MAAM,EAAE,GAAG;EACX,OAAO,EAAE,GAAG,GACf"}
+{"version":3,"file":"style.css","sources":["style.scss"],"sourcesContent":["* {\r\n    margin: 0px;\r\n    padding: 0px;\r\n}\r\nh1 {\r\n    font-size: 64px;\r\n}"],"names":[],"mappings":"AAAA,AAAA,CAAC,CAAC;EACE,MAAM,EAAE,GAAG;EACX,OAAO,EAAE,GAAG,GACf;;AACD,AAAA,EAAE,CAAC;EACC,SAAS,EAAE,IAAI,GAClB"}

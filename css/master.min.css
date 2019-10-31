@@ -1,0 +1,3 @@
+*{margin:0;padding:0}h1{font-size:64px}
+@media (max-width:1200px){h1{font:48px}}@media (max-width:992px){h1{font:36px}}@media (max-width:768px){h1{font:36px}}@media (max-width:576px){h1{font:24px}}
+/*# sourceMappingURL=master.min.css.map */
