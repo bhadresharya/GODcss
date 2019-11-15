@@ -1,12 +1,12 @@
 'use strict';
 
-var gulp = require('gulp');
-var scss = require('gulp-sass');
-var autoprefixer = require('gulp-autoprefixer');
-var shorthand = require('gulp-shorthand');
-var cleancss = require('gulp-clean-css');
-var mediaQ = require('gulp-group-css-media-queries');
-var concat = require('gulp-concat');
+const gulp = require('gulp');
+const scss = require('gulp-sass');
+const autoprefixer = require('gulp-autoprefixer');
+const shorthand = require('gulp-shorthand');
+const cleancss = require('gulp-clean-css');
+const mediaQ = require('gulp-group-css-media-queries');
+const concat = require('gulp-concat');
 
 gulp.task('style', function () {
     return gulp.src('./scss/**/*.scss', { sourcemaps: true })
